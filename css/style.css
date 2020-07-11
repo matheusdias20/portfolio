@@ -1,0 +1,227 @@
+/* Font-face */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* font-family: 'Roboto', sans-serif;*/
+
+:root{
+    --primary-color: #4458dc;
+    --primary-color2: #855fee;
+    --title-color: #141313;
+    --text-color: #777777;
+    --border-color: #201f1f17;
+    --gradient-color: linear-gradient(90deg, #5741d1 0%,#7279f8 100%);
+    --gradient-color2: linear-gradient(90deg, #f3b445 0%,#f89319 100%);
+    --shadow-color: 0px 10px 30px rgba(118,85,255,0.3);
+    --box-shadow: 0px 10px 13px rgba(57, 56, 61, 0.205);
+}
+
+
+
+html,body{
+    margin: 0%;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+  
+}
+
+
+/* Menu */
+.header_area .main-menu .nav-item .nav-link{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-right: 2rem;
+    color: #47547d;
+}
+
+.header_area .main-menu .navbar-nav .active a{
+    color: #f89319;
+
+}
+
+.header_area .main-menu .navbar-nav .active a:hover{
+    transform: scale(1.1);
+
+}
+
+.header_area .main-menu .navbar-nav a:hover{
+    transform: scale(1.1);
+
+}
+
+
+/* Banner */
+
+.site-main .site-banner .site-title h3{
+    padding-top: 20%;
+    font-weight: bold;
+    color: #47547d;
+}
+
+.site-main .site-banner .site-title h4{
+    color: #47547d;
+}
+
+.site-main .site-banner .site-title h3::after{
+    content: "";
+    height: 2px;
+    width: 24vw;
+    background: #47547d;
+    display: inline-block;
+    margin-left: 5%;
+    transform: translateY(-5px);
+}
+
+.site-main .site-banner .site-title h1{
+    font-size: 3rem;
+    background: var(--gradient-color2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+
+.site-main .site-banner .banner-image > img{
+    padding:  1.5rem 0;
+}
+
+.title-text{
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+.button{
+    padding: .8rem 2.2rem;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    border: 3px solid transparent;
+    border-radius: 5px;
+}
+
+.button.primary-button{
+    background: var(--gradient-color2);
+    background-clip: padding-box;
+    color: whitesmoke;
+    transition: background .6s ease;
+    box-shadow: var(--box-shadow);
+}
+
+.button.primary-button:hover{
+    background: whitesmoke;
+    background-clip: padding-box;
+    color: #47547d;
+}
+
+/* Sobre */
+
+.sobre{
+    display: block;
+    font-weight: bold;
+    font-size: 49px;
+    color: #f89319;
+    padding-top: 2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.para{
+    text-align: justify;
+    color: #47547d;
+    font-weight: bold;
+
+    margin-right: 5%;
+}
+
+/* Portfolio */
+
+.portfolio{
+    display: block;
+    font-weight: bold;
+    font-size: 49px;
+    color: #f89319;
+    padding-top: 2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.portfolio-projeto{
+    cursor: pointer;
+    border-radius: 5px;
+}
+.portfolio-projeto:hover{
+    transform: scale(1.05);
+    box-shadow: var(--box-shadow);
+}
+
+h4{
+    color: #f89319;
+    font-weight: bold;
+}
+
+span{
+    color: #47547d;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
+/* Footer */
+
+footer.footer-area{
+    padding: 5rem 0;
+    background: url("../img/footer-bg.png") no-repeat;
+}
+
+.logo-contact:hover{
+    transform: scale(1.2); 
+}
+
+
+.contact{
+    font-weight: bold;
+    font-size: 23px;
+    font-family: 'Roboto', sans-serif;
+    color: #f89319;
+    padding-bottom: 0.5rem;
+}
+
+.social-media{
+    font-size: 35px;
+    padding: 2rem;
+    color: var(--border-color);
+}
+
+.social-media:hover{
+    color: #47547d;
+}
+
+
+@media (min-width: 777px){
+
+    .portfolio::after{
+        content: "";
+        height: 2px;
+        width: 40vw;
+        background: #f89319;
+        display: inline-block;
+        margin-left: 5%;
+        transform: translateY(-10px);
+    }
+
+    .sobre::after{
+        content: "";
+        height: 2px;
+        width: 15vw;
+        background: #f89319;
+        display: inline-block;
+        margin-left: 5%;
+        transform: translateY(-14px);
+    }
+
+    .para{
+        width: 85%;
+    }
+
+}
+
